@@ -24,6 +24,7 @@ export default function TradingPage({ params }: PageProps) {
         eyebrow={t.trading.hero.eyebrow}
         heading={t.trading.hero.heading}
         description={t.trading.hero.description}
+        heroImage="/images/hero/trading.jpg"
       />
 
       <section className="py-20 lg:py-28 bg-white">

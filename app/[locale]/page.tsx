@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 import { getContent, type Locale } from '@/lib/i18n'
 import Hero from '@/components/Hero'
@@ -16,10 +17,10 @@ interface PageProps {
   params: { locale: Locale }
 }
 
-const placeholderProjects = [
-  { title: 'Commercial Complex — Manama', division: 'Construction', year: '2023', location: 'Manama', seed: 10 },
-  { title: 'Public Park — Riffa', division: 'Landscaping', year: '2022', location: 'Riffa', seed: 20 },
-  { title: 'School Play Area — Muharraq', division: 'Landscaping', year: '2023', location: 'Muharraq', seed: 30 },
+const featuredProjects = [
+  { title: 'Civil Works — Manama', division: 'Construction', year: '2023', location: 'Manama', imageSrc: '/images/projects/construction/civil/1.jpg' },
+  { title: 'Public Park — Riffa', division: 'Landscaping', year: '2022', location: 'Riffa', imageSrc: '/images/projects/landscaping/publicparks/1.jpg' },
+  { title: 'School Play Area — Muharraq', division: 'Landscaping', year: '2023', location: 'Muharraq', imageSrc: '/images/projects/landscaping/school/1.jpg' },
 ]
 
 export default function HomePage({ params }: PageProps) {
@@ -37,6 +38,7 @@ export default function HomePage({ params }: PageProps) {
         heading={t.home.hero.heading}
         subheading={t.home.hero.subheading}
         description={t.home.hero.description}
+        heroImage="/images/hero/construction.jpg"
         ctaPrimary={{ label: t.home.hero.ctaPrimary, href: `${base}/contact` }}
         ctaSecondary={{ label: t.home.hero.ctaSecondary, href: `${base}/projects` }}
       />
@@ -109,14 +111,14 @@ export default function HomePage({ params }: PageProps) {
             </Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {placeholderProjects.map((p) => (
+            {featuredProjects.map((p) => (
               <ProjectCard
-                key={p.seed}
+                key={p.imageSrc}
                 title={p.title}
                 division={p.division}
                 year={p.year}
                 location={p.location}
-                imageSeed={p.seed}
+                imageSrc={p.imageSrc}
               />
             ))}
           </div>
@@ -147,17 +149,16 @@ export default function HomePage({ params }: PageProps) {
             </div>
             {/* Visual block */}
             <div className="relative" aria-hidden="true">
-              <div className="aspect-[4/3] bg-sand-200 overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-terra-500/20 border border-terra-500/40 mx-auto mb-4 flex items-center justify-center">
-                      <span className="text-2xl font-bold text-terra-500">س</span>
-                    </div>
-                    <p className="text-xs text-charcoal-400 tracking-wide">Saraya Contractors</p>
-                  </div>
-                </div>
+              <div className="relative aspect-[4/3] bg-sand-200 overflow-hidden">
+                <Image
+                  src="/images/projects/landscaping/publicparks/2.jpg"
+                  alt="Saraya Contractors project"
+                  fill
+                  className="object-cover"
+                  loading="lazy"
+                />
               </div>
-              <div className="absolute -bottom-3 -right-3 w-16 h-16 bg-terra-500/20 border border-terra-500/30" />
+              <div className="absolute -bottom-3 -right-3 w-16 h-16 bg-terra-500" />
             </div>
           </div>
         </div>

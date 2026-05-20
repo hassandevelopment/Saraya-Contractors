@@ -10,13 +10,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return { title: t.projects.meta.title, description: t.projects.meta.description }
 }
 
-const placeholderProjects = [
-  { title: 'Commercial Complex — Manama', division: 'Construction', year: '2023', location: 'Manama', seed: 10 },
-  { title: 'Public Park Development — Riffa', division: 'Landscaping', year: '2022', location: 'Riffa', seed: 20 },
-  { title: 'School Play Area — Muharraq', division: 'Landscaping', year: '2023', location: 'Muharraq', seed: 30 },
-  { title: 'Residential Fit-out — Seef District', division: 'Construction', year: '2023', location: 'Seef', seed: 40 },
-  { title: 'Amusement Park Feature — Isa Town', division: 'Landscaping', year: '2021', location: 'Isa Town', seed: 50 },
-  { title: 'Office Block — Diplomatic Area', division: 'Construction', year: '2022', location: 'Manama', seed: 60 },
+const allProjects = [
+  { title: 'Civil Works — Manama', division: 'Construction', year: '2023', location: 'Manama', imageSrc: '/images/projects/construction/civil/1.jpg' },
+  { title: 'Electrical Works — Riffa', division: 'Construction', year: '2022', location: 'Riffa', imageSrc: '/images/projects/construction/electrical/1.jpg' },
+  { title: 'Mechanical Systems — Seef', division: 'Construction', year: '2023', location: 'Seef', imageSrc: '/images/projects/construction/mechanical/1.jpg' },
+  { title: 'Interior Fit-out — Manama', division: 'Construction', year: '2022', location: 'Manama', imageSrc: '/images/projects/construction/interior/1.jpg' },
+  { title: 'Public Park — Riffa', division: 'Landscaping', year: '2022', location: 'Riffa', imageSrc: '/images/projects/landscaping/publicparks/1.jpg' },
+  { title: 'School Play Area — Muharraq', division: 'Landscaping', year: '2023', location: 'Muharraq', imageSrc: '/images/projects/landscaping/school/1.jpg' },
+  { title: 'Amusement Park — Isa Town', division: 'Landscaping', year: '2021', location: 'Isa Town', imageSrc: '/images/projects/landscaping/amusement/1.jpg' },
+  { title: 'Wave Pool — Bahrain', division: 'Landscaping', year: '2021', location: 'Bahrain', imageSrc: '/images/projects/landscaping/wavepools/1.jpg' },
+  { title: 'Water Theme Park', division: 'Landscaping', year: '2020', location: 'Bahrain', imageSrc: '/images/projects/landscaping/waterparks/1.jpg' },
 ]
 
 export default function ProjectsPage({ params }: PageProps) {
@@ -53,14 +56,14 @@ export default function ProjectsPage({ params }: PageProps) {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {placeholderProjects.map((p) => (
+            {allProjects.map((p) => (
               <ProjectCard
-                key={p.seed}
+                key={p.imageSrc}
                 title={p.title}
                 division={p.division}
                 year={p.year}
                 location={p.location}
-                imageSeed={p.seed}
+                imageSrc={p.imageSrc}
               />
             ))}
           </div>

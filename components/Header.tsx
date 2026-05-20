@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 import LocaleSwitcher from './LocaleSwitcher'
 import { type Locale } from '@/lib/i18n'
@@ -61,29 +62,17 @@ export default function Header({ locale, nav }: HeaderProps) {
           {/* Logo */}
           <Link
             href={base}
-            className="flex items-center gap-2.5 shrink-0"
+            className="flex items-center shrink-0"
             aria-label="Saraya Contractors — Home"
           >
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <rect width="32" height="32" fill="#BF6030" />
-              <rect x="6" y="18" width="4" height="8" fill="white" />
-              <rect x="14" y="10" width="4" height="16" fill="white" />
-              <rect x="22" y="14" width="4" height="12" fill="white" />
-              <rect x="6" y="14" width="20" height="2" fill="white" opacity="0.4" />
-            </svg>
-            <span className="font-bold text-charcoal-900 tracking-tight text-lg leading-none">
-              SARAYA
-              <span className="block text-[10px] font-normal text-charcoal-500 tracking-widest uppercase leading-none mt-0.5">
-                Contractors
-              </span>
-            </span>
+            <Image
+              src="/images/logo.jpg"
+              alt="Saraya Contractors W.L.L."
+              width={160}
+              height={60}
+              className="h-12 w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}

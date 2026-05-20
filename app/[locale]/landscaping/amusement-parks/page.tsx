@@ -9,6 +9,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return { title: t.amusementParks.meta.title, description: t.amusementParks.meta.description }
 }
 
+const gallery = Array.from({ length: 8 }, (_, i) => `/images/projects/landscaping/amusement/${i + 1}.jpg`)
+
 export default function AmusementParksPage({ params }: PageProps) {
   const { locale } = params
   const t = getContent(locale)
@@ -19,8 +21,11 @@ export default function AmusementParksPage({ params }: PageProps) {
       eyebrow={t.amusementParks.hero.eyebrow}
       heading={t.amusementParks.hero.heading}
       description={t.amusementParks.hero.description}
+      heroImage="/images/projects/landscaping/amusement/1.jpg"
       scopeHeading={t.amusementParks.scope.heading}
       scopeItems={t.amusementParks.scope.items}
+      galleryImages={gallery}
+      galleryAlt="Amusement Parks"
       backHref={`${base}/landscaping`}
       backLabel={t.landscaping.hero.heading}
       contactLabel={t.common.getQuote}

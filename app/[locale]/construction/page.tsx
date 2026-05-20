@@ -24,6 +24,7 @@ export default function ConstructionPage({ params }: PageProps) {
         eyebrow={t.construction.hero.eyebrow}
         heading={t.construction.hero.heading}
         description={t.construction.hero.description}
+        heroImage="/images/hero/construction.jpg"
       />
 
       <section className="py-20 lg:py-28 bg-white">

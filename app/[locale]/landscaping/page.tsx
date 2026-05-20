@@ -24,6 +24,7 @@ export default function LandscapingPage({ params }: PageProps) {
         eyebrow={t.landscaping.hero.eyebrow}
         heading={t.landscaping.hero.heading}
         description={t.landscaping.hero.description}
+        heroImage="/images/hero/landscaping.jpg"
       />
 
       <section className="py-20 lg:py-28 bg-white">

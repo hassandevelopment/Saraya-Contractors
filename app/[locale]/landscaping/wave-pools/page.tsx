@@ -9,6 +9,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return { title: t.wavePools.meta.title, description: t.wavePools.meta.description }
 }
 
+const gallery = Array.from({ length: 3 }, (_, i) => `/images/projects/landscaping/wavepools/${i + 1}.jpg`)
+
 export default function WavePoolsPage({ params }: PageProps) {
   const { locale } = params
   const t = getContent(locale)
@@ -19,8 +21,11 @@ export default function WavePoolsPage({ params }: PageProps) {
       eyebrow={t.wavePools.hero.eyebrow}
       heading={t.wavePools.hero.heading}
       description={t.wavePools.hero.description}
+      heroImage="/images/projects/landscaping/wavepools/1.jpg"
       scopeHeading={t.wavePools.scope.heading}
       scopeItems={t.wavePools.scope.items}
+      galleryImages={gallery}
+      galleryAlt="Wave Pools"
       backHref={`${base}/landscaping`}
       backLabel={t.landscaping.hero.heading}
       contactLabel={t.common.getQuote}

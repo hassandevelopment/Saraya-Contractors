@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { type Locale } from '@/lib/i18n'
 
 interface HeroProps {
@@ -10,6 +11,7 @@ interface HeroProps {
   ctaPrimary?: { label: string; href: string }
   ctaSecondary?: { label: string; href: string }
   variant?: 'home' | 'page'
+  heroImage?: string
 }
 
 export default function Hero({
@@ -21,18 +23,11 @@ export default function Hero({
   ctaPrimary,
   ctaSecondary,
   variant = 'page',
+  heroImage,
 }: HeroProps) {
   if (variant === 'home') {
     return (
       <section className="relative min-h-[100dvh] bg-sand-100 flex items-center overflow-hidden">
-        {/* Geometric background accent */}
-        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-          <div className="absolute top-0 right-0 w-1/2 h-full bg-sand-200/40" />
-          <div className="absolute bottom-0 right-0 w-[45%] h-[70%] bg-terra-500/8" />
-          <div className="absolute top-[15%] right-[8%] w-72 h-72 border border-terra-500/20" />
-          <div className="absolute top-[22%] right-[12%] w-56 h-56 border border-terra-500/10" />
-        </div>
-
         <div className="relative max-w-content mx-auto px-6 lg:px-8 pt-24 pb-16 lg:pt-32 lg:pb-24 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Text side */}
@@ -40,21 +35,17 @@ export default function Hero({
               <p className="text-xs font-semibold tracking-widest uppercase text-terra-500 mb-6">
                 {eyebrow}
               </p>
-
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-charcoal-900 tracking-tight leading-[0.95] mb-4">
                 {heading}
               </h1>
-
               {subheading && (
                 <p className="text-sm font-semibold tracking-widest uppercase text-charcoal-500 mb-6">
                   {subheading}
                 </p>
               )}
-
               <p className="text-lg text-charcoal-600 leading-relaxed max-w-lg mb-10">
                 {description}
               </p>
-
               {(ctaPrimary || ctaSecondary) && (
                 <div className="flex flex-wrap gap-3">
                   {ctaPrimary && (
@@ -77,26 +68,28 @@ export default function Hero({
               )}
             </div>
 
-            {/* Visual side */}
-            <div className="relative hidden lg:block" aria-hidden="true">
-              <div className="relative aspect-[4/5] bg-charcoal-800 overflow-hidden">
-                {/* Placeholder image representation */}
-                <div className="absolute inset-0 bg-gradient-to-br from-charcoal-700 to-charcoal-900 flex items-end p-8">
-                  <div className="w-full">
-                    <div className="h-1 w-16 bg-terra-500 mb-4" />
-                    <div className="text-sand-300 text-sm tracking-wide">
-                      Project photography
-                    </div>
-                    <div className="text-sand-400 text-xs mt-1">
-                      Coming soon
+            {/* Visual side — real project photo */}
+            <div className="relative hidden lg:block">
+              <div className="relative aspect-[4/5] overflow-hidden">
+                {heroImage ? (
+                  <Image
+                    src={heroImage}
+                    alt="Saraya Contractors — project"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                ) : (
+                  <div className="w-full h-full bg-charcoal-800 flex items-end p-8">
+                    <div>
+                      <div className="h-1 w-16 bg-terra-500 mb-4" />
+                      <div className="text-sand-300 text-sm">Project photography coming soon</div>
                     </div>
                   </div>
-                </div>
-                {/* Geometric overlay */}
-                <div className="absolute top-6 right-6 w-20 h-20 border border-terra-500/30" />
-                <div className="absolute top-9 right-9 w-12 h-12 bg-terra-500/20" />
+                )}
+                {/* Terracotta accent overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/40 to-transparent pointer-events-none" />
               </div>
-              {/* Offset accent block */}
               <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-terra-500" aria-hidden="true" />
             </div>
           </div>
@@ -106,8 +99,20 @@ export default function Hero({
   }
 
   return (
-    <section className="bg-charcoal-900 pt-24 pb-14 lg:pt-32 lg:pb-16">
-      <div className="max-w-content mx-auto px-6 lg:px-8">
+    <section
+      className="relative bg-charcoal-900 pt-24 pb-14 lg:pt-32 lg:pb-16 overflow-hidden"
+    >
+      {heroImage && (
+        <Image
+          src={heroImage}
+          alt=""
+          fill
+          className="object-cover opacity-25"
+          aria-hidden="true"
+          priority
+        />
+      )}
+      <div className="relative max-w-content mx-auto px-6 lg:px-8">
         <p className="text-xs font-semibold tracking-widest uppercase text-terra-400 mb-4">
           {eyebrow}
         </p>

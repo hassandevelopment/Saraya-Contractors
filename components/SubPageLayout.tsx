@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import Hero from '@/components/Hero'
 import ScopeList from '@/components/ScopeList'
+import PhotoGallery from '@/components/PhotoGallery'
 import { type Locale } from '@/lib/i18n'
 
 interface SubPageLayoutProps {
@@ -9,8 +10,11 @@ interface SubPageLayoutProps {
   eyebrow: string
   heading: string
   description: string
+  heroImage?: string
   scopeHeading: string
   scopeItems: string[]
+  galleryImages?: string[]
+  galleryAlt?: string
   backHref: string
   backLabel: string
   contactLabel: string
@@ -23,8 +27,11 @@ export default function SubPageLayout({
   eyebrow,
   heading,
   description,
+  heroImage,
   scopeHeading,
   scopeItems,
+  galleryImages,
+  galleryAlt,
   backHref,
   backLabel,
   contactLabel,
@@ -33,11 +40,16 @@ export default function SubPageLayout({
 }: SubPageLayoutProps) {
   return (
     <>
-      <Hero locale={locale} eyebrow={eyebrow} heading={heading} description={description} />
+      <Hero
+        locale={locale}
+        eyebrow={eyebrow}
+        heading={heading}
+        description={description}
+        heroImage={heroImage}
+      />
 
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-content mx-auto px-6 lg:px-8">
-          {/* Back link */}
           <Link
             href={backHref}
             className="inline-flex items-center gap-2 text-sm text-charcoal-500 hover:text-terra-500 mb-10 transition-colors"
@@ -50,8 +62,7 @@ export default function SubPageLayout({
             <div className="lg:col-span-2">
               <ScopeList heading={scopeHeading} items={scopeItems} />
             </div>
-
-            <div className="space-y-6">
+            <div>
               <div className="bg-charcoal-900 p-6">
                 <h3 className="text-sm font-semibold text-sand-300 mb-3">{enquireLabel}</h3>
                 <Link
@@ -66,6 +77,10 @@ export default function SubPageLayout({
           </div>
         </div>
       </section>
+
+      {galleryImages && galleryImages.length > 0 && (
+        <PhotoGallery images={galleryImages} alt={galleryAlt ?? heading} />
+      )}
     </>
   )
 }
