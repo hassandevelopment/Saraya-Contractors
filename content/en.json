@@ -1,0 +1,673 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "construction": "Construction",
+    "trading": "Trading",
+    "landscaping": "Landscaping",
+    "projects": "Projects",
+    "contact": "Contact",
+    "getQuote": "Get a Quote",
+    "mobileMenuOpen": "Open menu",
+    "mobileMenuClose": "Close menu"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Bahrain-Based Contractor",
+      "heading": "Building Bahrain.",
+      "subheading": "Since 2001",
+      "description": "Saraya Contractors W.L.L. delivers civil construction, trading, and landscaping services across the Kingdom of Bahrain. Trusted by government and private sector clients for over two decades.",
+      "ctaPrimary": "Get a Quote",
+      "ctaSecondary": "View Projects"
+    },
+    "divisions": {
+      "heading": "Three Divisions. One Standard.",
+      "subheading": "Saraya operates across construction, trading, and landscaping — giving clients a single trusted partner for complex, multi-discipline projects.",
+      "items": [
+        {
+          "id": "construction",
+          "title": "Construction",
+          "description": "Civil, electrical, mechanical, interior finishing, and waste management for residential, commercial, and government projects across Bahrain.",
+          "href": "/construction",
+          "cta": "Construction Services"
+        },
+        {
+          "id": "trading",
+          "title": "Trading",
+          "description": "Supply of water coolers and specialist equipment to commercial and industrial clients throughout the Kingdom.",
+          "href": "/trading",
+          "cta": "Trading Products"
+        },
+        {
+          "id": "landscaping",
+          "title": "Landscaping",
+          "description": "Amusement parks, public gardens, school play areas, water theme parks, wave pools, sculptures, and murals — built to last.",
+          "href": "/landscaping",
+          "cta": "Landscaping Services"
+        }
+      ]
+    },
+    "stats": {
+      "heading": "Trusted Across Bahrain",
+      "items": [
+        { "value": "2001", "label": "Year Established" },
+        { "value": "500+", "label": "Projects Delivered" },
+        { "value": "3", "label": "Business Divisions" },
+        { "value": "BH", "label": "Kingdom of Bahrain" }
+      ]
+    },
+    "projects": {
+      "heading": "Recent Work",
+      "subheading": "A selection of completed projects across our three divisions.",
+      "cta": "View All Projects",
+      "placeholder": "Project photos coming soon. Contact us to learn about our portfolio."
+    },
+    "about": {
+      "eyebrow": "About Saraya",
+      "heading": "Established in Bahrain.\nBuilt on Trust.",
+      "description": "Saraya Contractors W.L.L. has been delivering quality construction and landscaping services in the Kingdom of Bahrain since 2001. Our three integrated divisions work together to meet the full range of our clients' needs — from civil infrastructure and specialist trading supply to award-winning public green spaces.",
+      "cta": "Learn About Us"
+    },
+    "cta": {
+      "heading": "Ready to Start Your Project?",
+      "description": "Get in touch with our team. We'll review your requirements and provide a tailored quotation.",
+      "cta": "Contact Us"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "About — Saraya Contractors W.L.L.",
+      "description": "Learn about Saraya Contractors W.L.L., a Bahrain-based contractor established in 2001 with divisions in construction, trading, and landscaping."
+    },
+    "hero": {
+      "eyebrow": "Who We Are",
+      "heading": "Saraya Contractors W.L.L.",
+      "description": "A Bahrain-based contracting company operating since 2001 across construction, trading, and landscaping."
+    },
+    "story": {
+      "heading": "Our Story",
+      "body": [
+        "Saraya Contractors W.L.L. was established in 2001 with a clear purpose: to deliver reliable, high-quality contracting services to clients across the Kingdom of Bahrain.",
+        "Over two decades, the company has grown from a civil construction operation into a multi-division business serving government bodies, private developers, and commercial clients. Today, Saraya operates across three integrated divisions — Construction, Trading, and Landscaping — giving clients a single trusted partner for complex, multi-discipline projects.",
+        "Every project we take on is completed to the same standard: on time, within budget, and built to last."
+      ]
+    },
+    "divisions": {
+      "heading": "Our Divisions",
+      "items": [
+        {
+          "title": "Construction",
+          "description": "Civil, electrical, mechanical, interior finishing, and waste management services for projects of all scales across Bahrain."
+        },
+        {
+          "title": "Trading",
+          "description": "Supply of water coolers and specialist equipment to commercial and industrial clients."
+        },
+        {
+          "title": "Landscaping",
+          "description": "Design and build of amusement parks, public gardens, school play areas, water features, sculptures, and murals."
+        }
+      ]
+    },
+    "leadership": {
+      "heading": "Leadership",
+      "placeholder": "Leadership profiles coming soon."
+    },
+    "certifications": {
+      "heading": "Certifications & Credentials",
+      "placeholder": "Certification details coming soon. Please contact us for information about our accreditations and registrations."
+    }
+  },
+  "construction": {
+    "meta": {
+      "title": "Construction — Saraya Contractors W.L.L.",
+      "description": "Civil, electrical, mechanical, interior, and waste management construction services across Bahrain."
+    },
+    "hero": {
+      "eyebrow": "Construction Division",
+      "heading": "Full-Scope Construction Services",
+      "description": "From civil groundworks to interior finishing, Saraya's construction division covers the full build lifecycle for residential, commercial, and government projects across Bahrain."
+    },
+    "services": [
+      {
+        "id": "civil",
+        "title": "Civil Construction",
+        "description": "Foundations, structures, roads, drainage, and civil infrastructure.",
+        "href": "/construction/civil"
+      },
+      {
+        "id": "electrical",
+        "title": "Electrical",
+        "description": "Power, lighting, and electrical systems for all building types.",
+        "href": "/construction/electrical"
+      },
+      {
+        "id": "mechanical",
+        "title": "Mechanical",
+        "description": "HVAC, plumbing, fire protection, and mechanical systems.",
+        "href": "/construction/mechanical"
+      },
+      {
+        "id": "interior",
+        "title": "Interior",
+        "description": "Fit-out, finishing, joinery, and interior design services.",
+        "href": "/construction/interior"
+      },
+      {
+        "id": "waste-management",
+        "title": "Waste Management",
+        "description": "Responsible waste collection, removal, and disposal services.",
+        "href": "/construction/waste-management"
+      }
+    ]
+  },
+  "civil": {
+    "meta": {
+      "title": "Civil Construction — Saraya Contractors W.L.L.",
+      "description": "Civil construction services including foundations, structures, roads, and drainage across Bahrain since 2001."
+    },
+    "hero": {
+      "eyebrow": "Construction / Civil",
+      "heading": "Civil Construction",
+      "description": "Saraya's civil construction operations have been active since 2001. We handle the full range of civil works — from site clearance and foundations through to structural frames, roads, and drainage systems."
+    },
+    "scope": {
+      "heading": "What We Handle",
+      "items": [
+        "Site clearance and preparation",
+        "Excavation and earthworks",
+        "Foundations and piling",
+        "Structural concrete and masonry",
+        "Roads and paving",
+        "Drainage and sewerage",
+        "Retaining walls",
+        "Site utilities"
+      ]
+    }
+  },
+  "electrical": {
+    "meta": {
+      "title": "Electrical — Saraya Contractors W.L.L.",
+      "description": "Electrical installation and systems services for residential, commercial, and government projects in Bahrain."
+    },
+    "hero": {
+      "eyebrow": "Construction / Electrical",
+      "heading": "Electrical Services",
+      "description": "Complete electrical installation services for buildings of all scales, from low-voltage distribution to high-specification commercial fit-out."
+    },
+    "scope": {
+      "heading": "What We Handle",
+      "items": [
+        "Low and medium voltage distribution",
+        "Internal and external lighting",
+        "Power and socket installations",
+        "Cable containment systems",
+        "Emergency and exit lighting",
+        "Earthing and lightning protection",
+        "Building management system wiring",
+        "Testing and commissioning"
+      ]
+    }
+  },
+  "mechanical": {
+    "meta": {
+      "title": "Mechanical — Saraya Contractors W.L.L.",
+      "description": "Mechanical services including HVAC, plumbing, and fire protection for projects across Bahrain."
+    },
+    "hero": {
+      "eyebrow": "Construction / Mechanical",
+      "heading": "Mechanical Services",
+      "description": "Full mechanical services covering HVAC, plumbing, fire protection, and all building services for residential, commercial, and government projects."
+    },
+    "scope": {
+      "heading": "What We Handle",
+      "items": [
+        "HVAC design and installation",
+        "Ductwork and air distribution",
+        "Chilled water systems",
+        "Domestic water supply and drainage",
+        "Fire suppression systems",
+        "Fire alarm and detection",
+        "Medical gas (where applicable)",
+        "Commissioning and maintenance"
+      ]
+    }
+  },
+  "interior": {
+    "meta": {
+      "title": "Interior — Saraya Contractors W.L.L.",
+      "description": "Interior fit-out, finishing, and joinery services for residential and commercial projects in Bahrain."
+    },
+    "hero": {
+      "eyebrow": "Construction / Interior",
+      "heading": "Interior Services",
+      "description": "Complete interior fit-out and finishing services — from partition systems and suspended ceilings through to high-end joinery and bespoke finishes."
+    },
+    "scope": {
+      "heading": "What We Handle",
+      "items": [
+        "Partition systems (drylining, glass, movable)",
+        "Suspended ceilings",
+        "Flooring (tiles, hardwood, carpet, raised access)",
+        "Wall finishes and cladding",
+        "Bespoke joinery and cabinetry",
+        "Doors, frames, and ironmongery",
+        "Painting and decorating",
+        "Sanitary ware supply and installation"
+      ]
+    }
+  },
+  "wasteManagement": {
+    "meta": {
+      "title": "Waste Management — Saraya Contractors W.L.L.",
+      "description": "Responsible waste collection, removal, and disposal services for construction and commercial clients in Bahrain."
+    },
+    "hero": {
+      "eyebrow": "Construction / Waste Management",
+      "heading": "Waste Management",
+      "description": "Responsible waste collection, removal, and disposal services for construction sites and commercial clients across Bahrain, in compliance with local environmental regulations."
+    },
+    "scope": {
+      "heading": "What We Handle",
+      "items": [
+        "Construction waste removal",
+        "Skip hire and collection",
+        "General commercial waste",
+        "Hazardous waste disposal",
+        "Recycling and segregation services",
+        "Site clearance on completion"
+      ]
+    }
+  },
+  "trading": {
+    "meta": {
+      "title": "Trading — Saraya Contractors W.L.L.",
+      "description": "Supply of water coolers and specialist equipment to commercial and industrial clients across Bahrain."
+    },
+    "hero": {
+      "eyebrow": "Trading Division",
+      "heading": "Equipment Supply & Trading",
+      "description": "Saraya's trading division supplies water coolers and specialist equipment to commercial and industrial clients throughout the Kingdom of Bahrain."
+    },
+    "products": [
+      {
+        "id": "water-coolers",
+        "title": "Water Coolers",
+        "description": "Commercial and industrial water cooling units for offices, factories, and public facilities.",
+        "href": "/trading/water-coolers"
+      },
+      {
+        "id": "x-ray-products",
+        "title": "X-Ray Products",
+        "description": "Specialist medical imaging equipment and accessories. Contact us to confirm current availability.",
+        "href": "/trading/x-ray-products"
+      }
+    ]
+  },
+  "waterCoolers": {
+    "meta": {
+      "title": "Water Coolers — Saraya Contractors W.L.L.",
+      "description": "Supply of commercial and industrial water coolers across Bahrain."
+    },
+    "hero": {
+      "eyebrow": "Trading / Water Coolers",
+      "heading": "Water Coolers",
+      "description": "Saraya supplies commercial and industrial water cooling units to offices, factories, schools, and public facilities across Bahrain. Contact us for product specifications and availability."
+    },
+    "scope": {
+      "heading": "What We Supply",
+      "items": [
+        "Free-standing water dispensers",
+        "Wall-mounted drinking water units",
+        "High-capacity industrial coolers",
+        "Bottle-fed and mains-fed options",
+        "Maintenance and servicing"
+      ]
+    }
+  },
+  "xRay": {
+    "meta": {
+      "title": "X-Ray Products — Saraya Contractors W.L.L.",
+      "description": "Specialist X-ray and medical imaging equipment supply. Contact Saraya Contractors for current availability."
+    },
+    "hero": {
+      "eyebrow": "Trading / X-Ray Products",
+      "heading": "X-Ray Products",
+      "description": "Saraya has supplied specialist X-ray and medical imaging equipment to clients in Bahrain. Contact us directly to confirm current product availability and to discuss your specific requirements."
+    },
+    "note": "Product availability subject to change. Please contact us to confirm current supply and lead times.",
+    "scope": {
+      "heading": "Products & Enquiries",
+      "body": "We supply specialist X-ray equipment and accessories to medical, veterinary, and industrial clients. Contact our trading team to discuss your requirements and receive a quotation."
+    }
+  },
+  "landscaping": {
+    "meta": {
+      "title": "Landscaping — Saraya Contractors W.L.L.",
+      "description": "Amusement parks, public gardens, school play areas, water features, sculptures, and murals across Bahrain."
+    },
+    "hero": {
+      "eyebrow": "Landscaping Division",
+      "heading": "Landscaping & Leisure Spaces",
+      "description": "From public parks and school play areas to full amusement parks and wave pools, Saraya's landscaping division designs and builds outdoor spaces that serve communities across Bahrain."
+    },
+    "services": [
+      {
+        "id": "amusement-parks",
+        "title": "Amusement Parks",
+        "description": "Full-scope design and construction of amusement parks and leisure attractions.",
+        "href": "/landscaping/amusement-parks"
+      },
+      {
+        "id": "gardens",
+        "title": "Gardens",
+        "description": "Private, commercial, and residential garden design and landscaping.",
+        "href": "/landscaping/gardens"
+      },
+      {
+        "id": "public-parks",
+        "title": "Public Parks",
+        "description": "Government and municipal public park construction and landscaping.",
+        "href": "/landscaping/public-parks"
+      },
+      {
+        "id": "school-play-areas",
+        "title": "School Play Areas",
+        "description": "Safe, age-appropriate school playground design and construction.",
+        "href": "/landscaping/school-play-areas"
+      },
+      {
+        "id": "water-theme-parks",
+        "title": "Water Theme Parks",
+        "description": "Water rides, pools, and water-based leisure attractions.",
+        "href": "/landscaping/water-theme-parks"
+      },
+      {
+        "id": "sculptures-murals",
+        "title": "Sculptures & Murals",
+        "description": "Bespoke public art, sculptures, and large-format murals.",
+        "href": "/landscaping/sculptures-murals"
+      },
+      {
+        "id": "wave-pools",
+        "title": "Wave Pools",
+        "description": "Wave pool construction and surf attraction installations.",
+        "href": "/landscaping/wave-pools"
+      }
+    ]
+  },
+  "amusementParks": {
+    "meta": {
+      "title": "Amusement Parks — Saraya Contractors W.L.L.",
+      "description": "Full-scope amusement park design and construction in Bahrain."
+    },
+    "hero": {
+      "eyebrow": "Landscaping / Amusement Parks",
+      "heading": "Amusement Parks",
+      "description": "Saraya designs and builds full amusement parks and leisure attractions across Bahrain, managing every aspect from civil groundworks to the installation of rides and facilities."
+    },
+    "scope": {
+      "heading": "What We Handle",
+      "items": [
+        "Master planning and concept design",
+        "Civil and structural works",
+        "Ride and attraction installation",
+        "Ticketing and entry infrastructure",
+        "Landscaping and soft planting",
+        "Electrical and mechanical systems",
+        "Safety compliance and certification support",
+        "Maintenance planning"
+      ]
+    }
+  },
+  "gardens": {
+    "meta": {
+      "title": "Gardens — Saraya Contractors W.L.L.",
+      "description": "Garden design and landscaping services for private, commercial, and residential clients in Bahrain."
+    },
+    "hero": {
+      "eyebrow": "Landscaping / Gardens",
+      "heading": "Gardens",
+      "description": "Saraya creates private, residential, and commercial gardens across Bahrain — from intimate courtyards to large-scale estate landscaping."
+    },
+    "scope": {
+      "heading": "What We Handle",
+      "items": [
+        "Garden design and layout",
+        "Irrigation systems",
+        "Soft landscaping (planting, turf, ground cover)",
+        "Hard landscaping (paving, pathways, walls)",
+        "Water features",
+        "Outdoor lighting",
+        "Maintenance contracts"
+      ]
+    }
+  },
+  "publicParks": {
+    "meta": {
+      "title": "Public Parks — Saraya Contractors W.L.L.",
+      "description": "Municipal and government public park construction across Bahrain."
+    },
+    "hero": {
+      "eyebrow": "Landscaping / Public Parks",
+      "heading": "Public Parks",
+      "description": "Saraya has constructed public parks for government and municipal clients across Bahrain, creating lasting green spaces for local communities."
+    },
+    "scope": {
+      "heading": "What We Handle",
+      "items": [
+        "Park design and master planning",
+        "Civil works and earthworks",
+        "Pathways, seating, and shelters",
+        "Play equipment installation",
+        "Irrigation and drainage",
+        "Soft landscaping and planting",
+        "Outdoor lighting",
+        "Signage and wayfinding"
+      ]
+    }
+  },
+  "schoolPlayAreas": {
+    "meta": {
+      "title": "School Play Areas — Saraya Contractors W.L.L.",
+      "description": "Safe and engaging school playground design and construction across Bahrain."
+    },
+    "hero": {
+      "eyebrow": "Landscaping / School Play Areas",
+      "heading": "School Play Areas",
+      "description": "Saraya designs and builds safe, age-appropriate school play areas for educational institutions across Bahrain, meeting local safety standards and educational requirements."
+    },
+    "scope": {
+      "heading": "What We Handle",
+      "items": [
+        "Play area design and layout",
+        "Age-appropriate equipment selection",
+        "Safety surfacing installation",
+        "Boundary fencing and shade structures",
+        "Civil works and drainage",
+        "Soft landscaping",
+        "Safety compliance certification support"
+      ]
+    }
+  },
+  "waterThemeParks": {
+    "meta": {
+      "title": "Water Theme Parks — Saraya Contractors W.L.L.",
+      "description": "Water park and aquatic leisure attraction construction in Bahrain."
+    },
+    "hero": {
+      "eyebrow": "Landscaping / Water Theme Parks",
+      "heading": "Water Theme Parks",
+      "description": "Saraya constructs water theme parks and aquatic leisure facilities for commercial and government clients, handling civil works, pool construction, ride installation, and all supporting infrastructure."
+    },
+    "scope": {
+      "heading": "What We Handle",
+      "items": [
+        "Civil and structural works",
+        "Pool and water feature construction",
+        "Water slide and ride installation",
+        "Filtration and treatment systems",
+        "Changing facilities and amenities",
+        "Electrical and mechanical services",
+        "Landscaping around water attractions",
+        "Safety systems and compliance"
+      ]
+    }
+  },
+  "sculpturesMurals": {
+    "meta": {
+      "title": "Sculptures & Murals — Saraya Contractors W.L.L.",
+      "description": "Bespoke public sculptures and large-format murals for outdoor spaces in Bahrain."
+    },
+    "hero": {
+      "eyebrow": "Landscaping / Sculptures & Murals",
+      "heading": "Sculptures & Murals",
+      "description": "Saraya produces bespoke sculptures and large-format murals for public spaces, commercial developments, and government projects across Bahrain."
+    },
+    "scope": {
+      "heading": "What We Handle",
+      "items": [
+        "Concept and design collaboration",
+        "Material selection and fabrication",
+        "Structural engineering for large installations",
+        "On-site installation and fixing",
+        "Surface preparation and mural painting",
+        "Anti-graffiti and weather protection coatings",
+        "Maintenance and restoration"
+      ]
+    }
+  },
+  "wavePools": {
+    "meta": {
+      "title": "Wave Pools — Saraya Contractors W.L.L.",
+      "description": "Wave pool construction and surf attraction installation in Bahrain."
+    },
+    "hero": {
+      "eyebrow": "Landscaping / Wave Pools",
+      "heading": "Wave Pools",
+      "description": "Saraya constructs wave pools and surf-based water attractions for leisure and tourism clients across Bahrain, managing the full build from civil works to system commissioning."
+    },
+    "scope": {
+      "heading": "What We Handle",
+      "items": [
+        "Pool basin design and construction",
+        "Wave generation system installation",
+        "Water treatment and filtration",
+        "Safety systems and lifeguard infrastructure",
+        "Surrounding landscaping and facilities",
+        "Electrical and mechanical services",
+        "Commissioning and testing"
+      ]
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "Projects — Saraya Contractors W.L.L.",
+      "description": "Portfolio of completed construction, trading, and landscaping projects by Saraya Contractors W.L.L. in Bahrain."
+    },
+    "hero": {
+      "eyebrow": "Our Work",
+      "heading": "Project Portfolio",
+      "description": "Completed projects across all three divisions — construction, trading, and landscaping — for government, commercial, and private clients across Bahrain."
+    },
+    "filters": {
+      "all": "All Projects",
+      "construction": "Construction",
+      "trading": "Trading",
+      "landscaping": "Landscaping"
+    },
+    "placeholder": "Project portfolio under development. Real project photos and case studies will be added soon. Contact us to enquire about specific project examples."
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact — Saraya Contractors W.L.L.",
+      "description": "Get in touch with Saraya Contractors W.L.L. in Bahrain. Request a quote or enquire about our construction, trading, and landscaping services."
+    },
+    "hero": {
+      "eyebrow": "Get in Touch",
+      "heading": "Contact Saraya Contractors",
+      "description": "Ready to discuss your project? Reach our team directly or fill in the enquiry form and we'll respond within one business day."
+    },
+    "details": {
+      "phone": {
+        "label": "Phone",
+        "placeholder": "[Phone number — update from client]"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "[Email address — update from client]"
+      },
+      "whatsapp": {
+        "label": "WhatsApp",
+        "placeholder": "[WhatsApp number — update from client]"
+      },
+      "address": {
+        "label": "Address",
+        "placeholder": "[Physical address — update from client]"
+      },
+      "hours": {
+        "label": "Business Hours",
+        "value": "Sunday – Thursday, 8:00 AM – 5:00 PM"
+      },
+      "crNumber": {
+        "label": "Commercial Registration",
+        "placeholder": "[CR Number — update from client]"
+      }
+    },
+    "form": {
+      "heading": "Send an Enquiry",
+      "name": { "label": "Full Name", "placeholder": "Your full name" },
+      "email": { "label": "Email Address", "placeholder": "your@email.com" },
+      "phone": { "label": "Phone / WhatsApp", "placeholder": "+973 XXXX XXXX" },
+      "division": {
+        "label": "Division of Interest",
+        "placeholder": "Select a division",
+        "options": [
+          { "value": "construction", "label": "Construction" },
+          { "value": "trading", "label": "Trading" },
+          { "value": "landscaping", "label": "Landscaping" },
+          { "value": "general", "label": "General Enquiry" }
+        ]
+      },
+      "message": { "label": "Message", "placeholder": "Describe your project or enquiry..." },
+      "submit": "Send Enquiry",
+      "sending": "Sending...",
+      "success": "Thank you. We'll be in touch within one business day.",
+      "error": "Something went wrong. Please try again or contact us directly."
+    }
+  },
+  "footer": {
+    "tagline": "Building Bahrain since 2001.",
+    "divisions": {
+      "heading": "Divisions",
+      "construction": "Construction",
+      "trading": "Trading",
+      "landscaping": "Landscaping"
+    },
+    "company": {
+      "heading": "Company",
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "copyright": "© {year} Saraya Contractors W.L.L. All rights reserved.",
+    "madeIn": "Kingdom of Bahrain"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "backTo": "Back to",
+    "getQuote": "Get a Quote",
+    "contactUs": "Contact Us",
+    "scope": "Scope of Work",
+    "whatWeHandle": "What We Handle",
+    "viewProjects": "View Projects",
+    "enquire": "Enquire About This Service",
+    "placeholderImage": "Project image coming soon",
+    "notFound": {
+      "heading": "Page Not Found",
+      "description": "The page you're looking for doesn't exist.",
+      "cta": "Back to Home"
+    }
+  }
+}
