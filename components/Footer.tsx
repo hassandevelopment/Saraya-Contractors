@@ -36,7 +36,7 @@ export default function Footer({ locale, footer }: FooterProps) {
             <p className="text-sm text-sand-300 leading-relaxed max-w-xs">
               {footer.tagline}
             </p>
-            <p className="text-xs text-navy-500 mt-4 tracking-wide uppercase">
+            <p className="text-xs text-sand-400 mt-4 tracking-wide uppercase">
               {footer.madeIn}
             </p>
           </div>
@@ -91,7 +91,7 @@ export default function Footer({ locale, footer }: FooterProps) {
         </div>
 
         <div className="border-t border-navy-700 mt-12 pt-6">
-          <p className="text-xs text-navy-500">{copyright}</p>
+          <p className="text-xs text-sand-400">{copyright}</p>
         </div>
       </div>
     </footer>
