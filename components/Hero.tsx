@@ -28,10 +28,7 @@ export default function Hero({
   if (variant === 'home') {
     return (
       <section className="relative min-h-[100dvh] bg-navy-900 flex items-center overflow-hidden">
-        {/* Subtle background texture — very faint grid lines */}
-        <div className="absolute inset-0 opacity-[0.04]" style={{backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '80px 80px'}} aria-hidden="true" />
-
-        <div className="relative max-w-content mx-auto px-6 lg:px-8 pt-32 pb-20 lg:pt-40 lg:pb-28 w-full">
+<div className="relative max-w-content mx-auto px-6 lg:px-8 pt-32 pb-20 lg:pt-40 lg:pb-28 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
             {/* Left — text */}
