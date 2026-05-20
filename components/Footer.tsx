@@ -24,13 +24,14 @@ export default function Footer({ locale, footer }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 lg:gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="mb-4">
+            {/* White container so the JPG logo reads on the dark footer */}
+            <div className="inline-block bg-white px-3 py-2 mb-5">
               <Image
                 src="/images/logo.jpg"
                 alt="Saraya Contractors W.L.L."
-                width={140}
-                height={52}
-                className="h-12 w-auto object-contain brightness-0 invert"
+                width={120}
+                height={44}
+                className="h-9 w-auto object-contain"
               />
             </div>
             <p className="text-sm text-sand-300 leading-relaxed max-w-xs">
@@ -43,22 +44,31 @@ export default function Footer({ locale, footer }: FooterProps) {
 
           {/* Divisions */}
           <div>
-            <h3 className="text-xs font-semibold tracking-widest uppercase text-sand-400 mb-4">
+            <h3 className="text-xs font-semibold tracking-widest uppercase text-sand-400 mb-5">
               {footer.divisions.heading}
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-3">
               <li>
-                <Link href={`${base}/construction`} className="text-sm text-sand-300 hover:text-white transition-colors duration-150">
+                <Link
+                  href={`${base}/construction`}
+                  className="text-sm text-sand-300 hover:text-white transition-colors duration-150 focus-visible:outline-none focus-visible:text-terra-400"
+                >
                   {footer.divisions.construction}
                 </Link>
               </li>
               <li>
-                <Link href={`${base}/trading`} className="text-sm text-sand-300 hover:text-white transition-colors duration-150">
+                <Link
+                  href={`${base}/trading`}
+                  className="text-sm text-sand-300 hover:text-white transition-colors duration-150 focus-visible:outline-none focus-visible:text-terra-400"
+                >
                   {footer.divisions.trading}
                 </Link>
               </li>
               <li>
-                <Link href={`${base}/landscaping`} className="text-sm text-sand-300 hover:text-white transition-colors duration-150">
+                <Link
+                  href={`${base}/landscaping`}
+                  className="text-sm text-sand-300 hover:text-white transition-colors duration-150 focus-visible:outline-none focus-visible:text-terra-400"
+                >
                   {footer.divisions.landscaping}
                 </Link>
               </li>
@@ -67,22 +77,31 @@ export default function Footer({ locale, footer }: FooterProps) {
 
           {/* Company */}
           <div>
-            <h3 className="text-xs font-semibold tracking-widest uppercase text-sand-400 mb-4">
+            <h3 className="text-xs font-semibold tracking-widest uppercase text-sand-400 mb-5">
               {footer.company.heading}
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-3">
               <li>
-                <Link href={`${base}/about`} className="text-sm text-sand-300 hover:text-white transition-colors duration-150">
+                <Link
+                  href={`${base}/about`}
+                  className="text-sm text-sand-300 hover:text-white transition-colors duration-150 focus-visible:outline-none focus-visible:text-terra-400"
+                >
                   {footer.company.about}
                 </Link>
               </li>
               <li>
-                <Link href={`${base}/projects`} className="text-sm text-sand-300 hover:text-white transition-colors duration-150">
+                <Link
+                  href={`${base}/projects`}
+                  className="text-sm text-sand-300 hover:text-white transition-colors duration-150 focus-visible:outline-none focus-visible:text-terra-400"
+                >
                   {footer.company.projects}
                 </Link>
               </li>
               <li>
-                <Link href={`${base}/contact`} className="text-sm text-sand-300 hover:text-white transition-colors duration-150">
+                <Link
+                  href={`${base}/contact`}
+                  className="text-sm text-sand-300 hover:text-white transition-colors duration-150 focus-visible:outline-none focus-visible:text-terra-400"
+                >
                   {footer.company.contact}
                 </Link>
               </li>
@@ -90,8 +109,9 @@ export default function Footer({ locale, footer }: FooterProps) {
           </div>
         </div>
 
-        <div className="border-t border-navy-700 mt-12 pt-6">
+        <div className="border-t border-white/10 mt-12 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <p className="text-xs text-sand-400">{copyright}</p>
+          <div className="h-px w-8 bg-terra-500" aria-hidden="true" />
         </div>
       </div>
     </footer>

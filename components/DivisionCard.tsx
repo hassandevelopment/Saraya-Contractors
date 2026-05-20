@@ -42,19 +42,25 @@ const divisionIcons: Record<string, React.ReactNode> = {
 export default function DivisionCard({ id, title, description, href, cta, index }: DivisionCardProps) {
   return (
     <div
-      className="group relative bg-white border border-sand-200 p-8 hover:border-terra-500/40 transition-all duration-200 hover:shadow-[0_8px_24px_-8px_rgba(191,96,48,0.15)]"
+      className="group relative bg-white border border-sand-200 p-8
+        hover:-translate-y-1 hover:border-terra-500/30 hover:shadow-[0_12px_32px_-8px_rgba(5,11,63,0.12)]
+        focus-within:ring-2 focus-within:ring-terra-500 focus-within:ring-offset-2
+        transition-all duration-200"
       style={{ animationDelay: `${index * 100}ms` }}
     >
-      {/* Index number — subtle background decoration */}
+      {/* Index number */}
       <span
-        className="absolute top-6 right-7 text-7xl font-bold text-sand-200 select-none leading-none"
+        className="absolute top-6 right-7 text-7xl font-bold text-sand-200 select-none leading-none transition-colors duration-200 group-hover:text-terra-500/10"
         aria-hidden="true"
       >
         0{index + 1}
       </span>
 
+      {/* Gold top border on hover */}
+      <div className="absolute top-0 left-0 right-0 h-[2px] bg-terra-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+
       {/* Icon */}
-      <div className="relative w-12 h-12 bg-terra-500/10 flex items-center justify-center text-terra-500 mb-6">
+      <div className="relative w-12 h-12 bg-terra-500/10 flex items-center justify-center text-terra-500 mb-6 transition-colors duration-200 group-hover:bg-terra-500/15">
         {divisionIcons[id] ?? divisionIcons.construction}
       </div>
 
@@ -68,10 +74,10 @@ export default function DivisionCard({ id, title, description, href, cta, index 
 
       <Link
         href={href}
-        className="relative inline-flex items-center gap-2 text-sm font-semibold text-terra-500 hover:text-terra-600 group-hover:gap-3 transition-all duration-200"
+        className="relative inline-flex items-center gap-2 text-sm font-semibold text-terra-500 hover:text-terra-600 group-hover:gap-3 transition-all duration-200 focus-visible:outline-none focus-visible:underline"
       >
         {cta}
-        <ArrowRight size={15} strokeWidth={2} />
+        <ArrowRight size={15} strokeWidth={2} className="transition-transform duration-200 group-hover:translate-x-0.5" />
       </Link>
     </div>
   )
