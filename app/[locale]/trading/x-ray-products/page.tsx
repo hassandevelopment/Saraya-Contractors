@@ -28,7 +28,7 @@ export default function XRayPage({ params }: PageProps) {
         <div className="max-w-content mx-auto px-6 lg:px-8">
           <Link
             href={`${base}/trading`}
-            className="inline-flex items-center gap-2 text-sm text-charcoal-500 hover:text-terra-500 mb-10 transition-colors"
+            className="inline-flex items-center gap-2 text-sm text-navy-500 hover:text-terra-500 mb-10 transition-colors"
           >
             <ArrowLeft size={14} />
             {t.trading.hero.heading}
@@ -36,7 +36,7 @@ export default function XRayPage({ params }: PageProps) {
 
           {/* Availability note */}
           <div className="mb-8 p-5 bg-sand-50 border border-sand-200 border-l-4 border-l-terra-500">
-            <p className="text-sm text-charcoal-600">{t.xRay.note}</p>
+            <p className="text-sm text-navy-600">{t.xRay.note}</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -44,10 +44,10 @@ export default function XRayPage({ params }: PageProps) {
               <h2 className="text-sm font-semibold tracking-widest uppercase text-terra-500 mb-4">
                 {t.xRay.scope.heading}
               </h2>
-              <p className="text-charcoal-700 leading-relaxed">{t.xRay.scope.body}</p>
+              <p className="text-navy-700 leading-relaxed">{t.xRay.scope.body}</p>
             </div>
             <div>
-              <div className="bg-charcoal-900 p-6">
+              <div className="bg-navy-900 p-6">
                 <h3 className="text-sm font-semibold text-sand-300 mb-3">{t.common.enquire}</h3>
                 <Link
                   href={`${base}/contact`}

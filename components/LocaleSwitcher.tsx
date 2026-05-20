@@ -24,7 +24,7 @@ export default function LocaleSwitcher({ locale }: LocaleSwitcherProps) {
     <Link
       href={href}
       lang={locale === 'en' ? 'ar' : 'en'}
-      className="text-sm font-medium text-charcoal-700 hover:text-terra-500 transition-colors duration-150 border border-charcoal-700/20 hover:border-terra-500/40 px-3 py-1.5 rounded-sm"
+      className="text-sm font-medium text-navy-700 hover:text-terra-500 transition-colors duration-150 border border-navy-700/20 hover:border-terra-500/40 px-3 py-1.5 rounded-sm"
     >
       {label}
     </Link>

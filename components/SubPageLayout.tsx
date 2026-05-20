@@ -52,7 +52,7 @@ export default function SubPageLayout({
         <div className="max-w-content mx-auto px-6 lg:px-8">
           <Link
             href={backHref}
-            className="inline-flex items-center gap-2 text-sm text-charcoal-500 hover:text-terra-500 mb-10 transition-colors"
+            className="inline-flex items-center gap-2 text-sm text-navy-500 hover:text-terra-500 mb-10 transition-colors"
           >
             <ArrowLeft size={14} />
             {backLabel}
@@ -63,7 +63,7 @@ export default function SubPageLayout({
               <ScopeList heading={scopeHeading} items={scopeItems} />
             </div>
             <div>
-              <div className="bg-charcoal-900 p-6">
+              <div className="bg-navy-900 p-6">
                 <h3 className="text-sm font-semibold text-sand-300 mb-3">{enquireLabel}</h3>
                 <Link
                   href={contactHref}

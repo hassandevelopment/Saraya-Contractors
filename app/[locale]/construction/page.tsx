@@ -36,7 +36,7 @@ export default function ConstructionPage({ params }: PageProps) {
               </h2>
               <Link
                 href={`${base}/contact`}
-                className="inline-flex items-center gap-2 text-sm font-semibold text-charcoal-700 hover:text-terra-500 mt-2 transition-colors"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-navy-700 hover:text-terra-500 mt-2 transition-colors"
               >
                 {t.common.enquire} <ArrowRight size={14} />
               </Link>

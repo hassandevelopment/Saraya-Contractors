@@ -24,9 +24,9 @@ export default function ProjectCard({ title, division, year, location, imageSrc 
         </span>
       </div>
       <div className="p-5">
-        <h3 className="font-semibold text-charcoal-900 mb-2 text-sm leading-snug">{title}</h3>
+        <h3 className="font-semibold text-navy-900 mb-2 text-sm leading-snug">{title}</h3>
         {(year || location) && (
-          <div className="flex gap-3 text-xs text-charcoal-400">
+          <div className="flex gap-3 text-xs text-navy-400">
             {location && <span>{location}</span>}
             {year && <span>{year}</span>}
           </div>

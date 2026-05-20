@@ -81,7 +81,7 @@ export default function Header({ locale, nav }: HeaderProps) {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-charcoal-700 hover:text-terra-500 transition-colors duration-150"
+                className="text-sm font-medium text-navy-700 hover:text-terra-500 transition-colors duration-150"
               >
                 {item.label}
               </Link>
@@ -106,7 +106,7 @@ export default function Header({ locale, nav }: HeaderProps) {
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label={mobileOpen ? nav.mobileMenuClose : nav.mobileMenuOpen}
               aria-expanded={mobileOpen}
-              className="p-2 text-charcoal-800 hover:text-terra-500 transition-colors"
+              className="p-2 text-navy-800 hover:text-terra-500 transition-colors"
             >
               {mobileOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
@@ -123,7 +123,7 @@ export default function Header({ locale, nav }: HeaderProps) {
                 key={item.href}
                 href={item.href}
                 onClick={() => setMobileOpen(false)}
-                className="py-3 text-base font-medium text-charcoal-800 hover:text-terra-500 border-b border-sand-100 last:border-0 transition-colors duration-150"
+                className="py-3 text-base font-medium text-navy-800 hover:text-terra-500 border-b border-sand-100 last:border-0 transition-colors duration-150"
               >
                 {item.label}
               </Link>

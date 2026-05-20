@@ -44,10 +44,10 @@ export default function ContactPage({ params }: PageProps) {
                       <Icon size={18} strokeWidth={1.5} />
                     </div>
                     <div>
-                      <p className="text-xs font-semibold tracking-widest uppercase text-charcoal-400 mb-1">
+                      <p className="text-xs font-semibold tracking-widest uppercase text-navy-400 mb-1">
                         {label}
                       </p>
-                      <p className="text-sm text-charcoal-700">{value}</p>
+                      <p className="text-sm text-navy-700">{value}</p>
                     </div>
                   </div>
                 ))}
@@ -55,7 +55,7 @@ export default function ContactPage({ params }: PageProps) {
 
               {/* Map placeholder */}
               <div className="mt-8 aspect-video bg-sand-200 flex items-center justify-center border border-sand-300">
-                <p className="text-sm text-charcoal-400">Map — coming soon</p>
+                <p className="text-sm text-navy-400">Map — coming soon</p>
               </div>
             </div>
 

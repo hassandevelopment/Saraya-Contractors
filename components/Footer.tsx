@@ -19,7 +19,7 @@ export default function Footer({ locale, footer }: FooterProps) {
   const copyright = footer.copyright.replace('{year}', String(year))
 
   return (
-    <footer className="bg-charcoal-900 text-sand-200">
+    <footer className="bg-navy-900 text-sand-200">
       <div className="max-w-content mx-auto px-6 lg:px-8 py-14 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 lg:gap-12">
           {/* Brand */}
@@ -36,7 +36,7 @@ export default function Footer({ locale, footer }: FooterProps) {
             <p className="text-sm text-sand-300 leading-relaxed max-w-xs">
               {footer.tagline}
             </p>
-            <p className="text-xs text-charcoal-500 mt-4 tracking-wide uppercase">
+            <p className="text-xs text-navy-500 mt-4 tracking-wide uppercase">
               {footer.madeIn}
             </p>
           </div>
@@ -90,8 +90,8 @@ export default function Footer({ locale, footer }: FooterProps) {
           </div>
         </div>
 
-        <div className="border-t border-charcoal-700 mt-12 pt-6">
-          <p className="text-xs text-charcoal-500">{copyright}</p>
+        <div className="border-t border-navy-700 mt-12 pt-6">
+          <p className="text-xs text-navy-500">{copyright}</p>
         </div>
       </div>
     </footer>

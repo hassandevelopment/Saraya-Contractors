@@ -59,10 +59,10 @@ export default function DivisionCard({ id, title, description, href, cta, index 
       </div>
 
       {/* Content */}
-      <h3 className="relative text-xl font-bold text-charcoal-900 mb-3 tracking-tight">
+      <h3 className="relative text-xl font-bold text-navy-900 mb-3 tracking-tight">
         {title}
       </h3>
-      <p className="relative text-sm text-charcoal-600 leading-relaxed mb-8">
+      <p className="relative text-sm text-navy-600 leading-relaxed mb-8">
         {description}
       </p>
 

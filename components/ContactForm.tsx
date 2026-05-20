@@ -51,7 +51,7 @@ export default function ContactForm({ form }: ContactFormProps) {
 
   return (
     <div>
-      <h2 className="text-xl font-bold text-charcoal-900 mb-6">{form.heading}</h2>
+      <h2 className="text-xl font-bold text-navy-900 mb-6">{form.heading}</h2>
 
       {status === 'success' && (
         <div role="alert" className="mb-6 p-4 bg-green-50 border border-green-200 text-green-800 text-sm">
@@ -73,7 +73,7 @@ export default function ContactForm({ form }: ContactFormProps) {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="name" className="text-sm font-medium text-charcoal-700">
+            <label htmlFor="name" className="text-sm font-medium text-navy-700">
               {form.name.label} <span aria-hidden="true" className="text-terra-500">*</span>
             </label>
             <input
@@ -82,12 +82,12 @@ export default function ContactForm({ form }: ContactFormProps) {
               type="text"
               required
               placeholder={form.name.placeholder}
-              className="border border-sand-300 focus:border-terra-500 focus:outline-none focus:ring-2 focus:ring-terra-500/20 px-3.5 py-2.5 text-sm text-charcoal-900 placeholder-charcoal-400 transition-colors duration-150"
+              className="border border-sand-300 focus:border-terra-500 focus:outline-none focus:ring-2 focus:ring-terra-500/20 px-3.5 py-2.5 text-sm text-navy-900 placeholder-navy-400 transition-colors duration-150"
             />
           </div>
 
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="email" className="text-sm font-medium text-charcoal-700">
+            <label htmlFor="email" className="text-sm font-medium text-navy-700">
               {form.email.label} <span aria-hidden="true" className="text-terra-500">*</span>
             </label>
             <input
@@ -96,14 +96,14 @@ export default function ContactForm({ form }: ContactFormProps) {
               type="email"
               required
               placeholder={form.email.placeholder}
-              className="border border-sand-300 focus:border-terra-500 focus:outline-none focus:ring-2 focus:ring-terra-500/20 px-3.5 py-2.5 text-sm text-charcoal-900 placeholder-charcoal-400 transition-colors duration-150"
+              className="border border-sand-300 focus:border-terra-500 focus:outline-none focus:ring-2 focus:ring-terra-500/20 px-3.5 py-2.5 text-sm text-navy-900 placeholder-navy-400 transition-colors duration-150"
             />
           </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="phone" className="text-sm font-medium text-charcoal-700">
+            <label htmlFor="phone" className="text-sm font-medium text-navy-700">
               {form.phone.label}
             </label>
             <input
@@ -111,18 +111,18 @@ export default function ContactForm({ form }: ContactFormProps) {
               name="phone"
               type="tel"
               placeholder={form.phone.placeholder}
-              className="border border-sand-300 focus:border-terra-500 focus:outline-none focus:ring-2 focus:ring-terra-500/20 px-3.5 py-2.5 text-sm text-charcoal-900 placeholder-charcoal-400 transition-colors duration-150"
+              className="border border-sand-300 focus:border-terra-500 focus:outline-none focus:ring-2 focus:ring-terra-500/20 px-3.5 py-2.5 text-sm text-navy-900 placeholder-navy-400 transition-colors duration-150"
             />
           </div>
 
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="division" className="text-sm font-medium text-charcoal-700">
+            <label htmlFor="division" className="text-sm font-medium text-navy-700">
               {form.division.label}
             </label>
             <select
               id="division"
               name="division"
-              className="border border-sand-300 focus:border-terra-500 focus:outline-none focus:ring-2 focus:ring-terra-500/20 px-3.5 py-2.5 text-sm text-charcoal-900 bg-white transition-colors duration-150"
+              className="border border-sand-300 focus:border-terra-500 focus:outline-none focus:ring-2 focus:ring-terra-500/20 px-3.5 py-2.5 text-sm text-navy-900 bg-white transition-colors duration-150"
             >
               <option value="">{form.division.placeholder}</option>
               {form.division.options.map((opt) => (
@@ -135,7 +135,7 @@ export default function ContactForm({ form }: ContactFormProps) {
         </div>
 
         <div className="flex flex-col gap-1.5">
-          <label htmlFor="message" className="text-sm font-medium text-charcoal-700">
+          <label htmlFor="message" className="text-sm font-medium text-navy-700">
             {form.message.label} <span aria-hidden="true" className="text-terra-500">*</span>
           </label>
           <textarea
@@ -144,7 +144,7 @@ export default function ContactForm({ form }: ContactFormProps) {
             required
             rows={5}
             placeholder={form.message.placeholder}
-            className="border border-sand-300 focus:border-terra-500 focus:outline-none focus:ring-2 focus:ring-terra-500/20 px-3.5 py-2.5 text-sm text-charcoal-900 placeholder-charcoal-400 resize-none transition-colors duration-150"
+            className="border border-sand-300 focus:border-terra-500 focus:outline-none focus:ring-2 focus:ring-terra-500/20 px-3.5 py-2.5 text-sm text-navy-900 placeholder-navy-400 resize-none transition-colors duration-150"
           />
         </div>
 

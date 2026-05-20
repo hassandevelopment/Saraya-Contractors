@@ -36,7 +36,7 @@ export default function AboutPage({ params }: PageProps) {
             </div>
             <div className="lg:col-span-2 space-y-5">
               {t.about.story.body.map((para, i) => (
-                <p key={i} className="text-charcoal-700 leading-relaxed text-lg">
+                <p key={i} className="text-navy-700 leading-relaxed text-lg">
                   {para}
                 </p>
               ))}
@@ -48,15 +48,15 @@ export default function AboutPage({ params }: PageProps) {
       {/* Divisions */}
       <section className="py-16 bg-sand-50">
         <div className="max-w-content mx-auto px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-charcoal-900 mb-8 tracking-tight">
+          <h2 className="text-2xl font-bold text-navy-900 mb-8 tracking-tight">
             {t.about.divisions.heading}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {t.about.divisions.items.map((div) => (
               <div key={div.title} className="bg-white border border-sand-200 p-6">
                 <div className="w-8 h-1 bg-terra-500 mb-4" />
-                <h3 className="font-bold text-charcoal-900 mb-2">{div.title}</h3>
-                <p className="text-sm text-charcoal-600 leading-relaxed">{div.description}</p>
+                <h3 className="font-bold text-navy-900 mb-2">{div.title}</h3>
+                <p className="text-sm text-navy-600 leading-relaxed">{div.description}</p>
               </div>
             ))}
           </div>
@@ -73,7 +73,7 @@ export default function AboutPage({ params }: PageProps) {
               </h2>
             </div>
             <div className="lg:col-span-2">
-              <p className="text-charcoal-500 italic">{t.about.leadership.placeholder}</p>
+              <p className="text-navy-500 italic">{t.about.leadership.placeholder}</p>
             </div>
           </div>
         </div>
@@ -89,14 +89,14 @@ export default function AboutPage({ params }: PageProps) {
               </h2>
             </div>
             <div className="lg:col-span-2">
-              <p className="text-charcoal-500 italic">{t.about.certifications.placeholder}</p>
+              <p className="text-navy-500 italic">{t.about.certifications.placeholder}</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-charcoal-900">
+      <section className="py-16 bg-navy-900">
         <div className="max-w-content mx-auto px-6 lg:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div>
             <h2 className="text-2xl font-bold text-white mb-2">{t.common.getQuote}</h2>

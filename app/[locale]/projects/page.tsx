@@ -40,7 +40,7 @@ export default function ProjectsPage({ params }: PageProps) {
         <div className="max-w-content mx-auto px-6 lg:px-8">
           {/* Placeholder notice */}
           <div className="mb-12 p-5 bg-sand-50 border border-sand-200 border-l-4 border-l-terra-500">
-            <p className="text-sm text-charcoal-600">{t.projects.placeholder}</p>
+            <p className="text-sm text-navy-600">{t.projects.placeholder}</p>
           </div>
 
           {/* Filter tabs (static — JS filtering can be added later) */}
@@ -48,7 +48,7 @@ export default function ProjectsPage({ params }: PageProps) {
             {[filters.all, filters.construction, filters.landscaping].map((f) => (
               <span
                 key={f}
-                className="text-sm font-medium px-4 py-2 border border-sand-200 text-charcoal-600 cursor-default"
+                className="text-sm font-medium px-4 py-2 border border-sand-200 text-navy-600 cursor-default"
               >
                 {f}
               </span>

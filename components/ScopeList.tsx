@@ -11,7 +11,7 @@ export default function ScopeList({ heading, items }: ScopeListProps) {
       </h2>
       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
         {items.map((item) => (
-          <li key={item} className="flex items-start gap-3 text-sm text-charcoal-700 leading-snug">
+          <li key={item} className="flex items-start gap-3 text-sm text-navy-700 leading-snug">
             <span className="shrink-0 mt-1.5 w-1.5 h-1.5 bg-terra-500 rounded-full" aria-hidden="true" />
             {item}
           </li>

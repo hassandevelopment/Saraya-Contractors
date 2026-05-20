@@ -35,15 +35,15 @@ export default function Hero({
               <p className="text-xs font-semibold tracking-widest uppercase text-terra-500 mb-6">
                 {eyebrow}
               </p>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-charcoal-900 tracking-tight leading-[0.95] mb-4">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-navy-900 tracking-tight leading-[0.95] mb-4">
                 {heading}
               </h1>
               {subheading && (
-                <p className="text-sm font-semibold tracking-widest uppercase text-charcoal-500 mb-6">
+                <p className="text-sm font-semibold tracking-widest uppercase text-navy-500 mb-6">
                   {subheading}
                 </p>
               )}
-              <p className="text-lg text-charcoal-600 leading-relaxed max-w-lg mb-10">
+              <p className="text-lg text-navy-600 leading-relaxed max-w-lg mb-10">
                 {description}
               </p>
               {(ctaPrimary || ctaSecondary) && (
@@ -59,7 +59,7 @@ export default function Hero({
                   {ctaSecondary && (
                     <Link
                       href={ctaSecondary.href}
-                      className="inline-flex items-center gap-2 border border-charcoal-700/30 hover:border-charcoal-900 text-charcoal-800 hover:text-charcoal-900 font-semibold px-6 py-3.5 transition-all duration-150"
+                      className="inline-flex items-center gap-2 border border-navy-700/30 hover:border-navy-900 text-navy-800 hover:text-navy-900 font-semibold px-6 py-3.5 transition-all duration-150"
                     >
                       {ctaSecondary.label}
                     </Link>
@@ -80,7 +80,7 @@ export default function Hero({
                     priority
                   />
                 ) : (
-                  <div className="w-full h-full bg-charcoal-800 flex items-end p-8">
+                  <div className="w-full h-full bg-navy-800 flex items-end p-8">
                     <div>
                       <div className="h-1 w-16 bg-terra-500 mb-4" />
                       <div className="text-sand-300 text-sm">Project photography coming soon</div>
@@ -88,7 +88,7 @@ export default function Hero({
                   </div>
                 )}
                 {/* Terracotta accent overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/40 to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-900/40 to-transparent pointer-events-none" />
               </div>
               <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-terra-500" aria-hidden="true" />
             </div>
@@ -100,7 +100,7 @@ export default function Hero({
 
   return (
     <section
-      className="relative bg-charcoal-900 pt-24 pb-14 lg:pt-32 lg:pb-16 overflow-hidden"
+      className="relative bg-navy-900 pt-24 pb-14 lg:pt-32 lg:pb-16 overflow-hidden"
     >
       {heroImage && (
         <Image
